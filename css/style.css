@@ -1,0 +1,353 @@
+/* Global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styles */
+.navbar {
+    padding: 1rem 2rem;
+    transition: background 0.3s ease;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: transparent;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #28a745 !important;
+}
+
+.button-primary {
+    background-color: #28a745;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+    background-color: #218838;
+}
+
+.navbar-toggler {
+    outline: none;
+}
+
+/* Hero section */
+#hero {
+    position: relative;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-tagline {
+    color: white;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .hero-tagline {
+        text-align: center;
+    }
+}
+
+/* Services section */
+.services {
+    background-color: #181818;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+/* .services h3 {
+    font-size: 2.5rem;
+    color: #fff;
+} */
+
+.services h2, h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.services .sub-title {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.card-layanan h3, p{
+    color: #fff;
+}
+
+.card-layanan {
+    background-color: #181818;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card-layanan:hover {
+    transform: translateY(-10px);
+}
+
+.circle-icon {
+    width: 100px;
+    height: 100px;
+    background-color: #28a745;
+    border-radius: 50%;
+}
+
+.circle-icon img {
+    width: 50px;
+}
+
+/* About section */
+.about {
+    padding: 5rem 0;
+    background-color: #181818;
+}
+
+.about img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+    .about {
+        text-align: center;
+    }
+
+    .about img {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Client section */
+#client {
+    background-color: #f8f9fa;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+#client img {
+    width: 150px;
+    margin: 1rem 0;
+}
+
+/* Team section */
+.team {
+    padding: 5rem 0;
+    background-color: #181818;
+}
+
+.team h2, h3 {
+    font-size: 2.0rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.team-card {
+    border: none;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-card img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Call-to-action section */
+.call-to-action {
+    background-color: #343a40;
+    color: white;
+    padding: 5rem 0;
+}
+
+.call-to-action h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.call-to-action button {
+    background-color: #28a745;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action button:hover {
+    background-color: #218838;
+}
+
+/* Blog section */
+.blog {
+    padding: 5rem 0;
+}
+
+.blog-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+}
+
+.blog h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.blog .btn-success {
+    border-radius: 50px;
+    padding: 0.5rem 2rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 2rem 0;
+}
+
+.footer p {
+    margin-bottom: 0;
+}
+
+.footer .btn-social {
+    border-radius: 50px;
+    background-color: white;
+    color: #343a40;
+}
+
+.footer .btn-social:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Media queries */
+@media (max-width: 992px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .hero-tagline {
+        text-align: center;
+    }
+
+    .team h3,
+    .services h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .navbar-toggler {
+        border-color: white;
+    }
+
+    .hero-tagline {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .about img {
+        margin: 2rem auto;
+    }
+
+    .team-card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #client img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .team h2, 
+    .services h2 {
+        font-size: 1.2rem;
+    }
+
+    .team-card,
+    .blog-card {
+        padding: 1rem;
+    }
+
+    .hero-tagline {
+        font-size: 1.2rem;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+
+    .call-to-action h2 {
+        font-size: 1.5rem;
+    }
+
+    .call-to-action button {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .circle-icon {
+        width: 80px;
+        height: 80px;
+    }
+}
