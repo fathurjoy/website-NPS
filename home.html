@@ -335,19 +335,39 @@
                 <li><a href="#">privacy & Policy</a></li>
             </ul>
             <ul class="sosmedList">
-                <li class="sosmedFooter"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li class="sosmedFooter"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                <li class="sosmedFooter"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li class="sosmedFooter"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li class="sosmedFooter"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li id="Instagram" class="sosmedFooter"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li id="Youtube" class="sosmedFooter"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li id="Twitter" class="sosmedFooter"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li id="facebook" class="sosmedFooter"> <a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li id="Linkedin" class="sosmedFooter"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
             </ul>
             <p class="copyright">Copyright © 2024 PT NATA PRAJA SOLUSINDO</p>
         </div>
     </footer>
-    <!-- Footer -->
-    <!-- Footer -->
-    <!-- Footer -->
 
+    <!-- sosmed link js -->
+    <script>
+        document.getElementById('Instagram').addEventListener('click', function () {
+            window.location.href = 'https://www.instagram.com/nataprajasolusindo/';
+        });
+        document.getElementById('Youtube').addEventListener('click', function () {
+            window.location.href = 'https://www.youtube.com/@NPSJogja';
+        });
+        document.getElementById('Twitter').addEventListener('click', function () {
+            window.location.href = 'https://x.com/NPS_NataPraja?mx=2';
+        });
+        document.getElementById('facebook').addEventListener('click', function () {
+            window.location.href = 'https://www.facebook.com/nataprajasolusindo.NPS';
+        });
+        document.getElementById('Linkedin').addEventListener('click', function () {
+            window.location.href = 'https://www.linkedin.com/company/nata-praja-solusindo/';
+        });
+    </script>
+    <!-- sosmed link js -->
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <!-- Footer -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -360,6 +380,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-   
+    
+    <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    });
+    </script>
 </body>
 </html>
